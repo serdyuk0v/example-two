@@ -49,8 +49,32 @@ public class Main {
         System.out.println("Для умеренного похудения на 7 кг спортсмену потребуется - " + dietLowDay + " дней.");
         int dietFastDay = loseWeightSportsman / dietFast;
         System.out.println("Для быстрого похудения на 7 кг спортсмену потребуется - " + dietFastDay + " дней.");
-        int dietAverageDay = ( dietLowDay + dietFastDay ) / 2;
+        int dietAverageDay = (dietLowDay + dietFastDay) / 2;
         System.out.println("В среднем для похудения на 7 кг спортсмену потребуется - " + dietAverageDay + " день.");
+
+        System.out.println("******************************************");
+        //Task 4
+        System.out.println("Задача 5");
+        var cashMasha = 67_760;
+        var cashYearMasha = cashMasha * 12;
+        var cashDenis = 83_690;
+        var cashYearDenis = cashDenis * 12;
+        var cashKristina = 76_230;
+        var cashYearKristina = cashKristina * 12;
+        var cashPercent = 0.1;
+
+
+        var cashNewMasha = (cashMasha * cashPercent) + cashMasha;
+        var cashYearNewMasha = cashNewMasha * 12 - cashYearMasha;
+        System.out.println("Маша теперь получает " + cashNewMasha + " рублей. Годовой доход вырос на " + cashYearNewMasha + " рублей.");
+
+        var cashNewDenis = (cashDenis * cashPercent) + cashDenis;
+        var cashYearNewDenis = cashNewDenis * 12 - cashYearDenis;
+        System.out.println("Денис теперь получает " + cashNewDenis + " рублей. Годовой доход вырос на " + cashYearNewDenis + " рублей.");
+
+        var cashNewKristina = (cashKristina * cashPercent) + cashKristina;
+        var cashYearNewKristina = cashNewKristina * 12 - cashYearKristina;
+        System.out.println("Кристина теперь получает " + cashNewKristina + " рублей. Годовой доход вырос на " + cashYearNewKristina + " рублей.");
 
     }
 }
